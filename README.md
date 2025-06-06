@@ -40,8 +40,8 @@ The objective of this task was to perform a basic vulnerability assessment on a 
 - Learned how to interpret security reports and identify mitigation steps for high-risk findings.
 
 ## Files Included
-- "Nessus_Vulnerability_Report.docx" – Detailed report of the scan.
-- "screenshots/" – Folder containing screenshots from the Nessus scan.
+- "task_3.pdf" – Detailed report of the scan.
+- "screenshots.pdf" – Folder containing screenshots from the Nessus scan.
 - "README.md" – This file.
 
 ---
