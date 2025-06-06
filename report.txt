@@ -1,0 +1,28 @@
+# Vulnerability Scan Report
+
+Scan Target: 192.168.31.***
+Tool Used: Nessus Essentials
+
+Summary:
+The vulnerability scan detected several services running on open ports:
+- Port 135 (MSRPC)
+- Port 139 (NetBIOS-SSN)
+- Port 445 (Microsoft-DS/SMB)
+
+Top Vulnerabilities:
+1. "CVE-2017-0143 (SMB Remote Code Execution - EternalBlue)"
+   - Severity: Critical
+   - Affects SMBv1 services.
+   - Mitigation: Disable SMBv1 and apply the MS17-010 patch.
+
+2. "NetBIOS Information Disclosure"
+   - Severity: High
+   - Allows attackers to gather sensitive network information.
+   - Mitigation: Disable NetBIOS over TCP/IP where not required.
+
+3. "MSRPC Service Exposure"
+   - Severity: Medium
+   - Could be used for privilege escalation in unpatched systems.
+   - Mitigation: Restrict access to port 135 and apply latest security updates.
+
+Screenshots and Nessus scan data have been included for reference.
